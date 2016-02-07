@@ -5,6 +5,7 @@ export default class Note extends React.Component{
     return  <div>
       <div>Learn Webpack</div>
       <div>Learn React</div>
+      <div>Learn NPM</div>
     </div>
   }
 }
