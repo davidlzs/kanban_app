@@ -8,6 +8,8 @@ var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, 'app');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'bundle');
 
+process.env.BABEL_ENV=TARGET;
+
 var common ={
   entry: {app: APP_PATH},
   resolve: {
