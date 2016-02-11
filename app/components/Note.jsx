@@ -32,7 +32,7 @@ export default class Note extends React.Component{
     return  <div onClick={this.edit}>{this.props.task}</div>;
   }
   finishEdit(e) {
-    //this.onEdit(e.target.value);
+    this.props.onEdit(e.target.value);
     this.setState({editing : false});
   }
   checkEnter(e) {
